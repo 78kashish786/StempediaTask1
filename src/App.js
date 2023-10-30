@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import PostList from './features/post/PostList';
 import './App.css';
+import AddPostForm from './features/post/AddPostForm';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2 className='text-center  text-2xl my-3'>Stempedia Task 1</h2>
+      <div className='grid grid-cols-2 gap-10  h-[100vh] p-16'>
+        <div className=''>
+        <AddPostForm/>
+        </div>
+        <div><PostList/></div>
+      </div>
+      
     </div>
   );
 }
